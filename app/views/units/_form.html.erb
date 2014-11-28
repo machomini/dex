@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :Component_id %><br>
-    <%= f.select :Component_id, options_from_collection_for_select(Component.all(), :id, :name, selected: @unit.Component_id) %>
+    <%= f.select :Component_id, options_from_collection_for_select(Component.all(), :id, :name, selected: @unit.Component_id), include_blank: true %>
   </div>
   <div class="field">
     <%= f.label :Name %><br>
