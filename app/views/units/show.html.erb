@@ -2,18 +2,27 @@
 
 <p>
   <strong>Army:</strong>
-  <%= @unit.Army.name %>
+  <%= @unit.army.name %>
 </p>
 
 <p>
   <strong>Component:</strong>
-  <%= @unit.Component.name %>
+  <%= @unit.component.name if @unit.component %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @unit.name %>
+</p>
+<p>
+ <strong>Introduced:</strong>
+  <%= @unit.introduced.name if @unit.introduced %>
 </p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @unit.Name %>
+<% if(@unit.outmodded) %>
+ <strong>Outmodded:</strong>
+  <%= @unit.outmodded.name %>
 </p>
-
+<% end %>
 <%= link_to 'Edit', edit_unit_path(@unit) %> |
 <%= link_to 'Back', units_path %>

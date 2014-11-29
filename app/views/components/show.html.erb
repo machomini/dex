@@ -5,5 +5,31 @@
   <%= @component.name %>
 </p>
 
+<table>
+  <thead>
+    <tr>
+      <th>Army</th>
+      <th>Component</th>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @component.units.each do |unit| %>
+      <tr>
+        <td><%= unit.army.name %></td>
+        <td><%= unit.component.name %></td>
+        <td><%= unit.name %></td>
+        <td><%= link_to 'Show', unit %></td>
+        <td><%= link_to 'Edit', edit_unit_path(unit) %></td>
+        <td><%= link_to 'Destroy', unit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+
 <%= link_to 'Edit', edit_component_path(@component) %> |
 <%= link_to 'Back', components_path %>

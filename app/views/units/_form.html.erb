@@ -12,16 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :Army_id %><br>
-    <%= f.select :Army_id, options_from_collection_for_select(Army.all(), :id, :name, selected: @unit.Army_id) %>
+    <%= f.label :army_id %><br>
+    <%= f.select :army_id, options_from_collection_for_select(Army.all(), :id, :name, selected: @unit.army_id) %>
   </div>
   <div class="field">
-    <%= f.label :Component_id %><br>
-    <%= f.select :Component_id, options_from_collection_for_select(Component.all(), :id, :name, selected: @unit.Component_id), include_blank: true %>
+    <%= f.label :component_id %><br>
+    <%= f.select :component_id, options_from_collection_for_select(Component.all(), :id, :name, selected: @unit.component_id), include_blank: true %>
   </div>
   <div class="field">
-    <%= f.label :Name %><br>
-    <%= f.text_field :Name %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
   </div>
   <div class="field">
     <%= f.label :introduced_id %><br>

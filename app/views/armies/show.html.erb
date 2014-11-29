@@ -5,5 +5,15 @@
   <%= @army.name %>
 </p>
 
+ <% @army.units.each do |unit| %>
+      <p>
+        <td><%= unit.name %></td>
+        <td><%= link_to 'Show', unit %></td>
+        <td><%= link_to 'Edit', edit_unit_path(unit) %></td>
+        <td><%= link_to 'Destroy', unit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </p>
+    <% end %>
+
+
 <%= link_to 'Edit', edit_army_path(@army) %> |
 <%= link_to 'Back', armies_path %>

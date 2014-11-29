@@ -13,9 +13,9 @@
   <tbody>
     <% @units.each do |unit| %>
       <tr>
-        <td><%= unit.Army.name %></td>
-        <td><%= unit.Component.name %></td>
-        <td><%= unit.Name %></td>
+        <td><%= unit.army.name %></td>
+        <td><%= unit.component.name %></td>
+        <td><%= unit.name %></td>
         <td><%= link_to 'Show', unit %></td>
         <td><%= link_to 'Edit', edit_unit_path(unit) %></td>
         <td><%= link_to 'Destroy', unit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
