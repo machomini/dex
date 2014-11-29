@@ -16,8 +16,8 @@
     <%= f.select :army_id, options_from_collection_for_select(Army.all(), :id, :name, selected: @unit.army_id) %>
   </div>
   <div class="field">
-    <%= f.label :component_id %><br>
-    <%= f.select :component_id, options_from_collection_for_select(Component.all(), :id, :name, selected: @unit.component_id), include_blank: true %>
+    <%= f.label :organisation_id %><br>
+    <%= f.select :organisation_id, options_from_collection_for_select(Organisation.all(), :id, :name, selected: @unit.organisation_id), include_blank: true %>
   </div>
   <div class="field">
     <%= f.label :name %><br>

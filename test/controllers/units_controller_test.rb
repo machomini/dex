@@ -18,7 +18,7 @@ class UnitsControllerTest < ActionController::TestCase
 
   test "should create unit" do
     assert_difference('Unit.count') do
-      post :create, unit: { Army_id: @unit.Army_id, Component_id: @unit.Component_id, Name: @unit.Name }
+      post :create, unit: { Army_id: @unit.Army_id, organisation_id: @unit.organisation_id, Name: @unit.Name }
     end
 
     assert_redirected_to unit_path(assigns(:unit))
@@ -35,7 +35,7 @@ class UnitsControllerTest < ActionController::TestCase
   end
 
   test "should update unit" do
-    patch :update, id: @unit, unit: { Army_id: @unit.Army_id, Component_id: @unit.Component_id, Name: @unit.Name }
+    patch :update, id: @unit, unit: { Army_id: @unit.Army_id, organisation_id: @unit.organisation_id, Name: @unit.Name }
     assert_redirected_to unit_path(assigns(:unit))
   end
 

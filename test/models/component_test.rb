@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ComponentTest < ActiveSupport::TestCase
+class OrganisationTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

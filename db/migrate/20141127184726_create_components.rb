@@ -1,6 +1,6 @@
-class CreateComponents < ActiveRecord::Migration
+class CreateOrganisations < ActiveRecord::Migration
   def change
-    create_table :components do |t|
+    create_table :organisations do |t|
       t.string :name
 
       t.timestamps

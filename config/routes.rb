@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :editions
 
-  resources :components
+  resources :organisations
 
   resources :armies
 

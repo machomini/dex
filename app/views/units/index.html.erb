@@ -4,7 +4,7 @@
   <thead>
     <tr>
       <th>Army</th>
-      <th>Component</th>
+      <th>Organisation</th>
       <th>Name</th>
       <th colspan="3"></th>
     </tr>
@@ -14,7 +14,7 @@
     <% @units.each do |unit| %>
       <tr>
         <td><%= unit.army.name %></td>
-        <td><%= unit.component.name %></td>
+        <td><%= unit.organisation.name %></td>
         <td><%= unit.name %></td>
         <td><%= link_to 'Show', unit %></td>
         <td><%= link_to 'Edit', edit_unit_path(unit) %></td>

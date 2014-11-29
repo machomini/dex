@@ -1,4 +1,4 @@
 require 'test_helper'
 
-class ComponentsHelperTest < ActionView::TestCase
+class OrganisationsHelperTest < ActionView::TestCase
 end

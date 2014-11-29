@@ -2,10 +2,10 @@
 
 one:
   Army_id: 
-  Component_id: 
+  Organisation_id: 
   Name: MyString
 
 two:
   Army_id: 
-  Component_id: 
+  Organisation_id: 
   Name: MyString

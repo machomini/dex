@@ -1,10 +1,10 @@
-<%= form_for(@component) do |f| %>
-  <% if @component.errors.any? %>
+<%= form_for(@organisation) do |f| %>
+  <% if @organisation.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@component.errors.count, "error") %> prohibited this component from being saved:</h2>
+      <h2><%= pluralize(@organisation.errors.count, "error") %> prohibited this organisation from being saved:</h2>
 
       <ul>
-      <% @component.errors.full_messages.each do |message| %>
+      <% @organisation.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>

@@ -5,7 +5,7 @@ Army.create!([
   {name: "Orks"},
   {name: "Tyranids"}
 ])
-Component.create!([
+Organisation.create!([
   {name: "HQ"},
   {name: "Elites"},
   {name: "Troops"},

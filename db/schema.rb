@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20141128000354) do
     t.datetime "updated_at"
   end
 
-  create_table "components", force: true do |t|
+  create_table "organisations", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20141128000354) do
 
   create_table "units", force: true do |t|
     t.integer  "army_id"
-    t.integer  "component_id"
+    t.integer  "Organisation_id"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -42,6 +42,6 @@ ActiveRecord::Schema.define(version: 20141128000354) do
   end
 
   add_index "units", ["army_id"], name: "index_units_on_army_id"
-  add_index "units", ["component_id"], name: "index_units_on_component_id"
+  add_index "units", ["organisation_id"], name: "index_units_on_organisation_id"
 
 end
