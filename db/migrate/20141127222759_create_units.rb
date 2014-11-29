@@ -1,9 +1,9 @@
 class CreateUnits < ActiveRecord::Migration
   def change
     create_table :units do |t|
-      t.references :Army, index: true
-      t.references :Component, index: true
-      t.string :Name
+      t.references :army, index: true
+      t.references :component, index: true
+      t.string :name
 
       t.timestamps
     end

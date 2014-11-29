@@ -32,16 +32,16 @@ ActiveRecord::Schema.define(version: 20141128000354) do
   end
 
   create_table "units", force: true do |t|
-    t.integer  "Army_id"
-    t.integer  "Component_id"
-    t.string   "Name"
+    t.integer  "army_id"
+    t.integer  "component_id"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "introduced_id"
     t.integer  "outmodded_id"
   end
 
-  add_index "units", ["Army_id"], name: "index_units_on_Army_id"
-  add_index "units", ["Component_id"], name: "index_units_on_Component_id"
+  add_index "units", ["army_id"], name: "index_units_on_army_id"
+  add_index "units", ["component_id"], name: "index_units_on_component_id"
 
 end
